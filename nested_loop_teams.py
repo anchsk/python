@@ -24,3 +24,14 @@ Unicorns vs Dragons
 Unicorns vs Wolves
 Unicorns vs Pandas
 """
+
+for home_team in teams:   
+    teams_list = [guest_team for guest_team in teams if home_team != guest_team]
+    print(home_team, teams_list)
+
+"""
+Dragons ['Wolves', 'Pandas', 'Unicorns']
+Wolves ['Dragons', 'Pandas', 'Unicorns']
+Pandas ['Dragons', 'Wolves', 'Unicorns']
+Unicorns ['Dragons', 'Wolves', 'Pandas']
+"""
