@@ -39,7 +39,12 @@ if "x" in letters:
 else:
     print('nope')
 
-if letters.index('x'):
-    print("there's a b")
-else:
-    print ("there's no b")
+try:
+    if letters.index('x'): # if not found throws a ValueError
+        print("there's a b")
+    else:
+        print ("there's no b")
+except:
+    print('error')
+finally:
+    print('Finished processing')
