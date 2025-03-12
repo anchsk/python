@@ -24,8 +24,22 @@ print(skip_elements(letters)) # Should be ['a', 'c', 'e', 'g']
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
 
 def skip_elements_2(elements):
-    # result = []
+    # prints x if the condition is met
     result = [x for (i,x) in enumerate(elements) if i%2 == 0]
     return result
 
 print(skip_elements_2(letters))
+
+# Create a list of tuples
+numbers  = [(1,2,3) for _ in range(0,5)]
+print(numbers)
+
+if "x" in letters:
+    print(letters.index('x'))
+else:
+    print('nope')
+
+if letters.index('x'):
+    print("there's a b")
+else:
+    print ("there's no b")
