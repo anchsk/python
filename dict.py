@@ -40,3 +40,17 @@ if "a" in my_dict:
 
 if "x" not in my_dict:
     print('is not')
+
+
+def count_letters(text):
+    result = {}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] += 1
+    return result
+
+print(count_letters('aaabbbaaa'))
+# {'a': 6, 'b': 3}
+print(count_letters('aaabbbAaa'))
+# {'a': 5, 'b': 3, 'A': 1}
