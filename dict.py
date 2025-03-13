@@ -34,3 +34,9 @@ print(c)
 # dict_items([('a', 10), ('b', 20), ('c', 30)])
 print(type(c)) 
 # <class 'str'>
+
+if "a" in my_dict:
+    print('is in')
+
+if "x" not in my_dict:
+    print('is not')
