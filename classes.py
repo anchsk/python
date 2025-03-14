@@ -42,3 +42,14 @@ print(Apple_2.__doc__)
 print(Apple_2.function_name.__doc__)
 
 
+# print list of classes
+print(dir(Apple_2))
+
+class Graph():
+    def __init__(self,id):
+        self.id = id
+        self.id = 80
+    
+val = Graph(200)
+print(val.id)
+# 80
