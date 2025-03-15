@@ -1,14 +1,18 @@
+# import sys
 # urllib (standard library)
 
 import urllib.request
+from pathlib import Path
 url = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%204/data/example1.txt'
-filename = 'download-file/Example1.txt'
+filename = f'{Path(__file__).parent}/Example1.txt'
 urllib.request.urlretrieve(url, filename)
-
+# print(Path.cwd())
+# print(Path(__file__).parent)
 ## Download Example file
 # wget Example1.txt https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%204/data/example1.txt
 
 
+# sys.exit()
 # requests library
 import requests 
 
