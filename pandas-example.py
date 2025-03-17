@@ -11,7 +11,7 @@ print(df.head(0))
 # pd.DataFrame(songs)
 
 # row index, col index
-# df.iloc([1,2]) # 1st row in the 2nd column
+# df.iloc([1,2]) 
 
 # create a Series from a list
 data = [10,20,30,40,50]
