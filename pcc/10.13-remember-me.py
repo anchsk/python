@@ -1,10 +1,30 @@
 from pathlib import Path
 import json
 
+path = Path(__file__).parent / "user-info.json"
+
+
+def check_name(new_name):
+    if not path.exists():
+        print("File does not exist!")
+        exit()
+    contents = path.read_text()
+    user_info = json.loads(contents)
+    saved_name = user_info["name"]
+    print('saved_name', user_info["name"])
+    if saved_name == new_name:
+        return True
+    else:
+        print("not the same!")
+        return False
+    
+    
 def get_name():
     while True: # an infinite loop will execute until the return is triggered
         name = input("What's your name? ")
-        if name:
+        if check_name(name):
+            # check_name(name)
+            print('Check executed')
             return name
         else:
             print("Please enter a valid name.")
@@ -27,7 +47,6 @@ def get_number():
         except:
             print("Please, enter a valid number!")
     
-path = Path(__file__).parent / "user-info.json"
 
 user_info = dict()
 
