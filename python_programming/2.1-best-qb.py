@@ -27,7 +27,9 @@ with open('python_programming/nfl_offensive_stats.csv', mode='r') as file:
 """ Print the sum of yards sorted in decreasing order """
 sorted_qb_yards = sorted(qb_yards.items(), key=lambda item: item[1], reverse=True)
 for player, yards in sorted_qb_yards:
-    if player != "Tom Brady":
-        print(f'{player}: {yards}')
+    if yards > 4000:
+        if player != "Tom Brady":
+            print(f'{player}: {yards}')
 
 print(f'The best quarterback is: {sorted_qb_yards[0][0]}')
+
