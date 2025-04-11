@@ -62,9 +62,31 @@ Z=np.dot(X,Y)
 print('Z',Z)
 
 a=np.array([0,1]) 
-
 b=np.array([1,0]) 
 
 np.dot(a,b) 
 
 print('dot', np.dot(a,b))
+
+a=np.array([0,1,0,1,0]) 
+
+b=np.array([1,0,1,0,1]) 
+
+arr = [0,23,1,12,7]
+print(sorted(arr))
+
+for i in range(1,5):
+    if (i != 1):
+        print(i)
+        
+def add(x):
+    return x+x 
+    # return(x+x) what's the difference?
+
+print('1:2,3:4'.split(':'))
+
+a = tuple([1,0,2])
+print(a[2])
+print(1/2, 1//2)
+name = 'ABCDE'
+print(name.find('B'))

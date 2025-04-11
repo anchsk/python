@@ -47,3 +47,11 @@ with open('download_file/Example2.txt', 'r') as file1:
 print(list1[0]) # This is line 1 \n
     
 print(file1.closed) # verify that the file is closed
+
+
+with open('download_file/Example2.txt', 'r') as file1:
+    for n in range(0,2):
+        print(file1.readline())
+        
+# This is line 1 
+# This is line 2
