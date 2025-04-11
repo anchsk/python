@@ -18,3 +18,12 @@ All the resources I used to learn Python:
 
 
 [Python Crash Course by Eric Matthes](https://github.com/ehmatthes/pcc_3e)
+
+
+# Working env
+
+check .venv and path to the current installation
+
+formatter:
+install autopep8 extension
+
