@@ -20,3 +20,9 @@ def get_author(isbn):
     except requests.exceptions.RequestException as e:
         # Handle request exceptions
         return {"error": str(e)}, 500
+
+
+# flask --app app --debug run
+# or
+""" if __name__ == "__main__":
+    app.run(debug=True) """
