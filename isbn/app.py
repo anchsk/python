@@ -4,6 +4,7 @@ import requests
 app = Flask(__name__)
 
 
+# route decorator, can have multiple routes stacked above the method home()
 @app.route('/')
 def home():
     return "Hello"
@@ -21,6 +22,9 @@ def get_author(isbn):
         # Handle request exceptions
         return {"error": str(e)}, 500
 
+@app.route("/hello/<name>")
+def hello(name):
+    return f"hello, {name}"
 
 # flask --app app --debug run
 # or
