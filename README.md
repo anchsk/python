@@ -3,7 +3,7 @@
 All the resources I used to learn Python:
 
 - [x] Python Crash Course by Google on Coursera
-- [ ] IBM Python for Data Science, AI & Development on Coursera
+- [x] IBM Python for Data Science, AI & Development on Coursera
 - [ ] 
 
 
