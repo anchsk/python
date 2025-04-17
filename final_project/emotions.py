@@ -28,8 +28,7 @@ for k, v in res.items():
 
 items = items.strip()[:-1]
 items_2 = ", ".join([f"'{k}': {v}" for k,v in res.items() if k!= 'dominant_emotion'])
-
-print(items_2)
+print([f"'{k}': {v}" for k,v in res.items() if k!= 'dominant_emotion'])
 
 output = 'The sentiment is: {}. The dominant emotion is: {}.'.format(items, res['dominant_emotion'])
 print(output)
