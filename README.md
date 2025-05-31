@@ -4,7 +4,7 @@ All the resources I used to learn Python:
 
 - [x] Python Crash Course by Google on Coursera
 - [x] IBM Python for Data Science, AI & Development on Coursera
-- [ ] 
+- [ ] Meta's Programming in Python Course
 
 
 
@@ -24,6 +24,16 @@ All the resources I used to learn Python:
 
 check .venv and path to the current installation
 
-formatter:
+
+https://docs.python.org/3/library/venv.html
+
+```bash
+python -m venv .venv       
+source .venv/bin/activate
+```
+
+
+## Formatter:
 install autopep8 extension
+
 
