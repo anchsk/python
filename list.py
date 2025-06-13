@@ -48,3 +48,9 @@ except:
     print('error')
 finally:
     print('Finished processing')
+    
+
+list1 = [1,2,3,4,5]
+print(*list1)
+list1.insert(4, 9)
+print(list1)
