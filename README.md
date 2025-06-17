@@ -1,4 +1,9 @@
+# Python Study
+
+This is a personal reference guide for Python programming, featuring resources and notes.
+
 # Resources:
+
 
 All the resources I used to learn Python:
 
