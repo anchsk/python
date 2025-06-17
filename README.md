@@ -9,7 +9,7 @@ All the resources I used to learn Python:
 
 - [x] Python Crash Course by Google on Coursera
 - [x] IBM Python for Data Science, AI & Development on Coursera
-- [ ] Meta's Programming in Python Course
+- [x] Meta's Programming in Python Course
 
 
 
